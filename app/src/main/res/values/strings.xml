@@ -76,6 +76,6 @@
     <string name="hint_1">X часов</string>
     <string name="hours">Часы</string>
     <string name="minutes">Минуты</string>
-    <string name="hint_2">по умолчанию 12АМ</string>
+    <string name="hint_2">(по умолчанию 12 часов дня)</string>
 
 </resources>

@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Calendar;
@@ -31,6 +32,7 @@ public class Change_timeline extends AppCompatActivity {
     AlarmManager alarmManager;
     PendingIntent pendingIntent;
     int valHour, valMinute;
+    TextView tv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +50,8 @@ public class Change_timeline extends AppCompatActivity {
         reset = findViewById(R.id.page4_resetbutton);
         choose = findViewById(R.id.page4_chooseBtn);
 
+        tv = findViewById(R.id.umolch);
+
         dbHelperPeriod = new DBHelperPeriod(this);
         SQLiteDatabase database = dbHelperPeriod.getWritableDatabase();
 
@@ -62,6 +66,7 @@ public class Change_timeline extends AppCompatActivity {
             valMinute = cursor.getInt(indexMin);
             ethours.setText(String.valueOf(valHour));
             etminutes.setText(String.valueOf(valMinute));
+            tv.setText("Нынешнее время: ");
         }
         else {
             valHour = 12;
@@ -102,9 +107,10 @@ public class Change_timeline extends AppCompatActivity {
         });
 
         choose.setOnClickListener(v -> {
-            if (ethours.getText().length() == 0 || etminutes.getText().length() == 0) Toast.makeText(this, "Укажите слева от кнопки время, когда должно приходить уведомление", Toast.LENGTH_LONG).show();
-            else if (Integer.parseInt(ethours.getText().toString()) > 24) Toast.makeText(this, "Введите корректное кол-во часов в промежутке от 0 до 24 часов", Toast.LENGTH_LONG).show();
-            else if (Integer.parseInt(etminutes.getText().toString()) > 59) Toast.makeText(this, "Введите корректное кол-во часов в промежутке от 0 до 59 часов", Toast.LENGTH_LONG).show();
+            if (isNotTime()) Toast.makeText(this, "Укажите корректное время слева от кнопки, когда должно приходить уведомление", Toast.LENGTH_LONG).show();
+            else if(isNotHour() || isNotMinute()) Toast.makeText(this, "Укажите корректное время слева от кнопки, когда должно приходить уведомление", Toast.LENGTH_LONG).show();
+            else if (isNotHour()) Toast.makeText(this, "Введите корректное кол-во часов в промежутке от 0 до 24 часов", Toast.LENGTH_LONG).show();
+            else if (isNotMinute()) Toast.makeText(this, "Введите корректное кол-во минут в промежутке от 0 до 59 часов", Toast.LENGTH_LONG).show();
             else {
                 int h = Integer.parseInt(ethours.getText().toString());
                 int m = Integer.parseInt(etminutes.getText().toString());
@@ -113,9 +119,22 @@ public class Change_timeline extends AppCompatActivity {
                 contentValues.put(DBHelperUnique.NOTIFY_MINUTES, m);
                 databaseUniq.delete(DBHelperUnique.TABLE_UNIQUE, null, null);
                 databaseUniq.insert(DBHelperUnique.TABLE_UNIQUE, null, contentValues);
+                tv.setText("Нынешнее время: ");
                 Toast.makeText(this, "Сохранено", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    public boolean isNotTime() {
+        return ethours.getText().length() == 0 || etminutes.getText().length() == 0;
+    }
+
+    public boolean isNotHour() {
+        return Integer.parseInt(ethours.getText().toString()) > 24;
+    }
+
+    public boolean isNotMinute() {
+        return Integer.parseInt(etminutes.getText().toString()) > 59;
     }
 
     public boolean isNotPeriod(String period) {
@@ -139,7 +158,7 @@ public class Change_timeline extends AppCompatActivity {
                 calendar.add(Calendar.WEEK_OF_MONTH, num);
                 break;
             case "m":
-                calendar.add(Calendar.MONTH, num);
+                calendar.add(Calendar.DAY_OF_MONTH, 30 * num);
                 break;
 
         }

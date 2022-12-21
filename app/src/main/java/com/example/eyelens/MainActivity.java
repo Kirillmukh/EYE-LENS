@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
         pb = findViewById(R.id.pb);
         pb.setMax(100);
+        pb.setProgress(0);
 
         howToUse.setOnClickListener(v -> {
             Intent intent = new Intent(this, Videos.class);
@@ -101,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 pb.setProgress(i);
                 i += 1;
-                if (i >= progress)
+                if (i > progress)
                     t.cancel();
             }
         };
@@ -149,5 +150,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         dbHelperPeriod.close();
+        pb.setProgress(0);
     }
 }
