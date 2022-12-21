@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalActivity">
+
+    <TextView
+        android:id="@+id/app_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:fontFamily="@font/inter"
+        android:paddingBottom="25sp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/page5_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/page5_main_title"
+        android:background="@color/gray"
+        android:padding="10sp"
+        android:layout_marginHorizontal="20dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/inter"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/app_logo"
+        android:layout_marginTop="16dp"
+        android:textStyle="normal"/>
+
+    <TextView
+        android:id="@+id/page5_title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/page5_main_title"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+
+        android:background="@color/white"
+        android:fontFamily="@font/inter"
+        android:paddingVertical="8dp"
+        android:text="@string/page5_title"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+
+    <View
+        android:id="@+id/page5_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/page5_title"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/black" />
+
+    <Button
+        android:id="@+id/page5_but1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/page5_title"
+
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/inter"
+        android:text="@string/page5_btn1"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="20dp"/>
+
+    <Button
+        android:id="@+id/page5_but2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/page5_but1"
+
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/inter"
+        android:text="@string/page5_btn2"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="20dp"/>
+
+    <Button
+        android:id="@+id/page5_but3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="100dp"
+        android:layout_below="@id/page5_but2"
+
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/inter"
+        android:text="@string/page5_btn3"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="20dp"/>
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_marginTop="20dp"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/page5_but2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/hint_1"/>
+
+    <Button
+        android:id="@+id/page5_but4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/page5_but3"
+
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/inter"
+        android:text="@string/page5_btn4"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/page5_but4"
+        android:layout_above="@id/page5_but5"
+        android:gravity="center">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:fontFamily="@font/inter"
+            android:text="@string/attention"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/inter"
+            android:text="@string/page5at1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/inter"
+            android:text="@string/page5at2"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/inter"
+            android:text="@string/page5at3"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/inter"
+            android:text="@string/page5at4"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/page5_but5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/inter"
+        android:text="@string/page5_btn5"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="20dp"/>
+
+</RelativeLayout>

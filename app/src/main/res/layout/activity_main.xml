@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/app_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:fontFamily="@font/inter"
+        android:paddingBottom="25sp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/page1_button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/page1_button3"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/inter"
+        android:padding="10sp"
+        android:text="@string/page1button2"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:cornerRadius="20dp" />
+
+    <Button
+        android:id="@+id/page1_button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_logo"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="16dp"
+
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/inter"
+        android:text="@string/page1button1"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:cornerRadius="20dp" />
+
+    <Button
+        android:id="@+id/page1_button3"
+        android:layout_below="@id/page1_button1"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/inter"
+        android:text="@string/page1button3"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        app:cornerRadius="20dp" />
+
+    <Button
+        android:id="@+id/period"
+        android:layout_below="@id/page1_button1"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/inter"
+        android:text="@string/page1button4"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        app:cornerRadius="20dp"/>
+
+    <Button
+        android:id="@+id/page1_button4"
+        android:layout_below="@id/page1_button2"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/inter"
+        android:text="@string/page1_final"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        app:cornerRadius="20dp" />
+
+    <View
+        android:id="@+id/page1_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/page1_button4"
+        android:background="@color/black"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/page1_attention"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@id/page1_line1"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:text="@string/attention"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            android:fontFamily="@font/inter"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/page1_attention2"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:fontFamily="@font/inter"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/page1_attention3"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:fontFamily="@font/inter"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/page1_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/page1_attention"
+        android:background="@color/black"
+        android:layout_marginHorizontal="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/page1_attention"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:progressDrawable="@drawable/circle"
+        style="@style/CircularDeterminateProgressBar" />
+
+    <TextView
+        android:id="@+id/page1_switch"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/page1_attention"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center"
+
+        android:text="@string/page1_switch"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:fontFamily="@font/inter"/>
+
+</RelativeLayout>

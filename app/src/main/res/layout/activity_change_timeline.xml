@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Change_timeline">
+
+    <TextView
+        android:id="@+id/app_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:fontFamily="@font/inter"
+        android:paddingBottom="25sp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/page4_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_logo"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/gray"
+        android:fontFamily="@font/inter"
+        android:padding="10sp"
+        android:text="@string/page1button4"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/page4_main"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/page4_title"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+
+        android:background="@color/white"
+        android:fontFamily="@font/inter"
+        android:paddingVertical="8dp"
+        android:text="@string/page4_title"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+
+    <View
+        android:id="@+id/page4_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/page4_main"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/black" />
+
+    <View
+        android:id="@+id/page4_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/page4_main"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/page4_line4"
+        android:layout_below="@id/page4_line2"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/page4_t1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/page4_line1"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="19dp"
+
+        android:fontFamily="@font/inter"
+        android:text="@string/page4_main"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+
+    <View
+        android:id="@+id/page4_line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/page4_t1"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/page4_t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/page4_t1"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+
+        android:fontFamily="@font/inter"
+        android:text="@string/page4_t1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/page4_t3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/page4_t1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+
+        android:fontFamily="@font/inter"
+        android:text="@string/page4_t2"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/page4_t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/page4_t1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginEnd="30dp"
+
+        android:fontFamily="@font/inter"
+        android:text="@string/page4_t3"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:textStyle="normal" />
+
+    <View
+        android:id="@+id/page4_line4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/page4_t3"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/black" />
+
+    <View
+        android:id="@+id/page4_line5"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/page4_line4"
+        android:layout_below="@id/page4_line2"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/black" />
+
+    <View
+        android:id="@+id/page4_line6"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/page4_line4"
+        android:layout_below="@id/page4_line2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="0dp"
+
+        android:background="@color/black" />
+
+    <View
+        android:id="@+id/page4_line9"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/page4_line4"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/page4_line10"
+        android:layout_below="@id/page4_line9"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/timeline_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/inter"
+            android:hint="@string/hint6"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/page4_line10"
+        android:layout_below="@id/page4_line9"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center"
+
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/timeline_period"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/inter"
+            android:hint="@string/hint7"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/page4_line10"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/page4_confirm_button"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/black" />
+
+    <Button
+        android:id="@+id/page4_resetbutton"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_above="@id/page4_line8"
+
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/inter"
+        android:text="@string/reset"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="20dp"/>
+
+    <Button
+        android:id="@+id/page4_confirm_button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_above="@id/page4_line8"
+
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/inter"
+        android:text="@string/confirm_changing"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="20dp"/>
+
+    <View
+        android:id="@+id/page4_line8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/page4_choose_time"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/page4_choose_time"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_above="@id/llh"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+
+        android:background="@color/white"
+        android:fontFamily="@font/inter"
+        android:paddingVertical="8dp"
+        android:text="@string/page4_choosetime"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:id="@+id/llh"
+        android:layout_above="@id/page4_line11"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="20dp"
+        android:layout_alignParentEnd="true"
+        android:gravity="center">
+
+    <EditText
+        android:id="@+id/etChoose1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hours"
+        android:inputType="number"
+        android:layout_marginEnd="5dp"/>
+
+    <EditText
+        android:id="@+id/etChoose2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/minutes"
+        android:inputType="number"
+        android:layout_marginEnd="5dp"/>
+
+    <Button
+        android:id="@+id/page4_chooseBtn"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/inter"
+        android:text="@string/page4_choosebtn"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="20dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/page4_line11"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/page4_attention"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/page4_attention"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_above="@id/page4_line7"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:fontFamily="@font/inter"
+            android:text="@string/attention"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/inter"
+            android:text="@string/page4_attention1"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/inter"
+            android:text="@string/page4_attention2"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/inter"
+            android:text="@string/page4_attention3"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/inter"
+            android:text="@string/page4_attention4"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/inter"
+            android:text="@string/page4_attention5"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/inter"
+            android:text="@string/page4_attention6"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/page4_line7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="80dp"
+
+
+        android:background="@color/black" />
+
+    <Button
+        android:id="@+id/go_back_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/inter"
+        android:onClick="goBack"
+        android:text="@string/go_back"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="20dp"
+        tools:ignore="UsingOnClickInXml" />
+
+</RelativeLayout>

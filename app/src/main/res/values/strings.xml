@@ -1,0 +1,81 @@
+<resources>
+
+    <string name="app_name">EYE LENS</string>
+    <string name="go_back">&#8592; ВЕРНУТЬСЯ НАЗАД</string>
+
+    <string name="page1button1">КАК ПОЛЬЗОВАТЬСЯ ЛИНЗАМИ</string>
+    <string name="page1button2">ВИДЫ ЛИНЗ</string>
+    <string name="page1button3">ИЗМЕНИТЬ РЕЦЕПТ</string>
+    <string name="page1button4">УКАЗАТЬ СРОК ЛИНЗ</string>
+    <string name="attention"><b>ВНИМАНИЕ!!!</b></string>
+    <string name="page1_attention2">При любом контакте с линзами</string>
+    <string name="page1_attention3">тщательно мойте руки</string>
+    <string name="page1_switch">ДО ЗАМЕНЫ X ДНЕЙ</string>
+    <string name="page1_final">УПРАВЛЕНИЕ ЗАМЕНОЙ ЛИНЗ</string>
+
+    <string name="page2_1day">ОДНОДНЕВНЫЕ</string>
+    <string name="page2_2day">МНОГОДНЕВНЫЕ</string>
+    <string name="page2_1day_i">Однодневные линзы следует носить 1 пару ровно 1 день, в конце дня линзы нужно выкидывать. Такие линзы наиболее гигиеничные, потому что надеваете и снимаете каждую пару вы ровно 1 раз</string>
+    <string name="page2_2day_i">Многодневные линзы, в отличие от однодневных можно носить тот период, на которые они расчитаны, но каждый раз перед сном их нужно снимать, и класть в специальный контейнер, который регулярно нужно тщательно промывать жидкостью для линз</string>
+    <string name="page2_attention2">Не следует носить линзы дольше</string>
+    <string name="page2_attention3">заявленого срока, это может</string>
+    <string name="page2_attention4">сильно навредить вашим глазам</string>
+
+    <string name="page3_fill_gaps">ЗАПОЛНИТЕ ПОЛЯ ПО РЕЦЕПТУ</string>
+    <string name="OS">OS ЛЕВЫЙ</string>
+    <string name="OD">OD ПРАВЫЙ</string>
+
+    <string name="hint1">SPH / PWR / DC</string>
+    <string name="hint2">AX</string>
+    <string name="hint3">CYL</string>
+    <string name="hint4">BC</string>
+    <string name="hint5">DIA</string>
+
+    <string name="confirm_changing">ПОДТВЕРДИТЬ</string>
+    <string name="reset">СБРОСИТЬ</string>
+
+    <string name="page3_attention2">Не пытайтесь <b>самостоятельно</b></string>
+    <string name="page3_attention3">определить рецепт.</string>
+    <string name="page3_attention4">Если у вас нет рецепта, запишитесь на</string>
+    <string name="page3_attention5">осмотр к окулисту, врачу-офтальмологу</string>
+
+    <string name="page4_title">ЗАПОЛНИТЕ ПОЛЯ СОГЛАСНО ТАБЛИЦЕ</string>
+
+    <string name="page4_main">ПЕРИОДЫ</string>
+    <string name="page4_t1">ДЕНЬ - ‘<b>d</b>’</string>
+    <string name="page4_t2">НЕДЕЛЯ - ‘<b>w</b>’</string>
+    <string name="page4_t3">МЕСЯЦ - ‘<b>m</b>’</string>
+
+    <string name="hint6">Напишите число</string>
+    <string name="hint7">Напишите период</string>
+
+    <string name="page4_attention1"><b>Берегите зрение!</b></string>
+    <string name="page4_attention2">Во время чтения, просмотра телевизора,</string>
+    <string name="page4_attention3">работы за компьютером необходимо</string>
+    <string name="page4_attention4">делать паузы от 10 до 15 минут.</string>
+    <string name="page4_attention5">Смотреть телевизор и читать книги</string>
+    <string name="page4_attention6">важно в хорошо освещённом помещении.</string>
+    <string name="page4_choosetime">Желаете ли выбрать время для уведомлений?</string>
+    <string name="page4_choosebtn">ЖЕЛАЮ</string>
+
+    <string name="question">КАК ПОНЯТЬ ВЫВЕРНУТА ЛИ ЛИНЗА</string>
+
+    <string name="page5_main_title">СРОК ИСТЁК</string>
+    <string name="page5_title">ПОРА МЕНЯТЬ ЛИНЗЫ</string>
+    <string name="page5_btn1">ЛИНЗЫ ЗАМЕНЕНЫ, ПЕРИОД ТОТ ЖЕ</string>
+    <string name="page5_btn2">ЛИНЗЫ ЗАМЕНЕНЫ, ИЗМЕНИТЬ ПЕРИОД</string>
+    <string name="page5_btn3">НАПОМНИТЬ ЧЕРЕЗ</string>
+    <string name="page5_btn4">СБРОСИТЬ ПЕРИОД</string>
+    <string name="page5_btn5">&#8592; ВЫЙТИ В МЕНЮ</string>
+
+    <string name="page5at1">Срок линз истек!</string>
+    <string name="page5at2">Замените линзы на новые!</string>
+    <string name="page5at3">Ни в коем случае</string>
+    <string name="page5at4">не пренебрегайте здоровьем!!!</string>
+
+    <string name="hint_1">X часов</string>
+    <string name="hours">Часы</string>
+    <string name="minutes">Минуты</string>
+    <string name="hint_2">по умолчанию 12АМ</string>
+
+</resources>

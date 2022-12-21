@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Change_recept">
+
+    <TextView
+        android:id="@+id/app_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:fontFamily="@font/inter"
+        android:paddingBottom="25sp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/page3_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/page1button3"
+        android:background="@color/gray"
+        android:padding="10sp"
+        android:layout_marginHorizontal="20dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/inter"
+        android:textSize="13sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/app_logo"
+        android:layout_marginTop="16dp"
+        android:textStyle="normal"/>
+
+    <TextView
+        android:id="@+id/fillgaps"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/page3_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+
+        android:text="@string/page3_fill_gaps"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:fontFamily="@font/inter"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        android:paddingVertical="8dp"/>
+
+    <View
+        android:id="@+id/page3_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/fillgaps"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/recept1"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_above="@id/page3_confirm_button"
+        android:layout_below="@id/page3_line1"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/OS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/white"
+            android:fontFamily="@font/inter"
+            android:text="@string/OS"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="normal"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <EditText
+            android:id="@+id/OS_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint1"
+            android:textColorHint="@color/gray"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/black"
+            android:inputType="numberSigned|numberDecimal"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"/>
+
+        <EditText
+            android:id="@+id/OS_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint2"
+            android:textColorHint="@color/gray"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"/>
+
+        <EditText
+            android:id="@+id/OS_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint3"
+            android:textColorHint="@color/gray"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"/>
+
+        <EditText
+            android:id="@+id/OS_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint4"
+            android:textColorHint="@color/gray"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"/>
+
+        <EditText
+            android:id="@+id/OS_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint5"
+            android:textColorHint="@color/gray"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/black"
+            android:inputType="numberSigned|numberDecimal"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recept2"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/page3_line1"
+        android:layout_above="@id/page3_confirm_button"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+        android:gravity="center"
+
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/OD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/white"
+            android:fontFamily="@font/inter"
+            android:text="@string/OD"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="normal"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <EditText
+            android:id="@+id/OD_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint1"
+            android:textColorHint="@color/gray"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/black"
+            android:inputType="numberSigned|numberDecimal"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"/>
+
+        <EditText
+            android:id="@+id/OD_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint2"
+            android:textColorHint="@color/gray"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"/>
+
+        <EditText
+            android:id="@+id/OD_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint3"
+            android:textColorHint="@color/gray"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"/>
+
+        <EditText
+            android:id="@+id/OD_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint4"
+            android:textColorHint="@color/gray"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"/>
+
+        <EditText
+            android:id="@+id/OD_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint5"
+            android:textColorHint="@color/gray"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:fontFamily="@font/inter"
+            android:textColor="@color/black"
+            android:inputType="numberSigned|numberDecimal"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/page3_reset_button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/page3_line2"
+
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/inter"
+        android:text="@string/reset"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="20dp"/>
+
+    <Button
+        android:id="@+id/page3_confirm_button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/page3_line2"
+
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/inter"
+        android:text="@string/confirm_changing"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="20dp"/>
+
+    <View
+        android:id="@+id/page3_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/page3_attention"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/page3_attention"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_above="@id/page3_line3"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:text="@string/attention"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            android:fontFamily="@font/inter"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/page3_attention2"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:fontFamily="@font/inter"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/page3_attention3"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:fontFamily="@font/inter"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/page3_attention4"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:fontFamily="@font/inter"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/page3_attention5"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:fontFamily="@font/inter"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/page3_line3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/black"
+
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/button_page3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/gray"
+        android:fontFamily="@font/inter"
+        android:text="@string/go_back"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:cornerRadius="20dp"
+        tools:ignore="UsingOnClickInXml" />
+
+</RelativeLayout>
