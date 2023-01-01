@@ -182,6 +182,7 @@
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="20dp"
         android:progressDrawable="@drawable/circle"
+        android:progress="0"
         style="@style/CircularDeterminateProgressBar" />
 
     <TextView

@@ -40,12 +40,13 @@ public class MainActivity extends AppCompatActivity {
         typeOfLens = findViewById(R.id.page1_button2);
         finalPage = findViewById(R.id.page1_button4);
 
-        tv = findViewById(R.id.page1_switch);
-        tv.setVisibility(View.INVISIBLE);
-
         pb = findViewById(R.id.pb);
         pb.setMax(100);
         pb.setProgress(0);
+
+        tv = findViewById(R.id.page1_switch);
+        tv.setVisibility(View.INVISIBLE);
+
 
         howToUse.setOnClickListener(v -> {
             Intent intent = new Intent(this, Videos.class);
@@ -147,9 +148,15 @@ public class MainActivity extends AppCompatActivity {
         setProgressValue();
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        pb.setProgress(0);
+    }
+
+    @Override
     protected void onDestroy() {
         super.onDestroy();
         dbHelperPeriod.close();
-        pb.setProgress(0);
     }
 }

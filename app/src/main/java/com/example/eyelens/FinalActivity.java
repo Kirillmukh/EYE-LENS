@@ -46,6 +46,9 @@ public class FinalActivity extends AppCompatActivity {
 
         dbHelperPeriod = new DBHelperPeriod(this);
         dbHelperUnique = new DBHelperUnique(this);
+
+        MainActivity mainActivity = new MainActivity();
+
         SQLiteDatabase databaseUniq = dbHelperUnique.getWritableDatabase();
 
         Cursor cursor = databaseUniq.query(DBHelperUnique.TABLE_UNIQUE, null, null, null, null, null, null);
@@ -113,6 +116,7 @@ public class FinalActivity extends AppCompatActivity {
             SQLiteDatabase database = dbHelperPeriod.getWritableDatabase();
             database.delete(DBHelperPeriod.TABLE_PERIOD, null, null);
             Toast.makeText(this, "Период сброшен", Toast.LENGTH_SHORT).show();
+            mainActivity.pb.setProgress(0);
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         });
