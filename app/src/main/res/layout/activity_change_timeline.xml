@@ -363,7 +363,7 @@
 
         android:backgroundTint="@color/gray"
         android:fontFamily="@font/inter"
-        android:text="@string/page4_choosebtn"
+        android:text="@string/confirm_changing"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:textStyle="normal"

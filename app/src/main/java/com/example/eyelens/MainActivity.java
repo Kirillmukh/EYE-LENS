@@ -12,7 +12,6 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.sql.Time;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
