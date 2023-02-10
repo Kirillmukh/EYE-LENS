@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 return " день";
         }
         if ((n % 10 == 2 || n % 10 == 3 || n % 10 == 4) && (n % 100 / 10 != 1)) return " дня";
-        else return " дней";
+        return " дней";
     }
 
     public void setProgressValue() {
