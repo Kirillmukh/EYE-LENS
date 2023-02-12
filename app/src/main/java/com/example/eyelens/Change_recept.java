@@ -78,7 +78,7 @@ public class Change_recept extends AppCompatActivity {
             if (cursor.getString(indR5).equals("nullValue")) r5.setText("");
             else r5.setText(cursor.getString(indR5));
 
-        } else Log.d("mLog", "Not yeat");
+        }
         cursor.close();
 
         cnfrmBtn.setOnClickListener(v -> {

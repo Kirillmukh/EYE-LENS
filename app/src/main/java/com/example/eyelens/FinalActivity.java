@@ -106,7 +106,7 @@ public class FinalActivity extends AppCompatActivity {
                 calendar.setTime(date);
                 calendar.add(Calendar.HOUR, n);
                 setNotify(calendar.getTimeInMillis());
-                Toast.makeText(this, "сохранено", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Сохранено", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
             }
@@ -162,7 +162,7 @@ public class FinalActivity extends AppCompatActivity {
             int index = cursor.getColumnIndex(DBHelperPeriod.LENGTH);
             int value = cursor.getInt(index);
             calendar.add(Calendar.DAY_OF_MONTH, value);
-        } else Log.d("mLog", "Not yeat");
+        }
         cursor.close();
         return calendar;
     }

@@ -103,7 +103,7 @@ public class Change_timeline extends AppCompatActivity {
         reset.setOnClickListener(v -> {
             database.delete(DBHelperPeriod.TABLE_PERIOD, null, null);
             Toast.makeText(this, "Успешно сброшено", Toast.LENGTH_SHORT).show();
-            cancelAlarm();
+            cancelNotify();
         });
 
         choose.setOnClickListener(v -> {
@@ -173,7 +173,7 @@ public class Change_timeline extends AppCompatActivity {
                 AlarmManager.INTERVAL_FIFTEEN_MINUTES, pendingIntent);
     }
 
-    public void cancelAlarm() {
+    public void cancelNotify() {
         Intent intent = new Intent(this, ActionNotify.class);
         pendingIntent = PendingIntent.getBroadcast(this,0,intent,0);
         if (alarmManager == null){
