@@ -109,8 +109,8 @@ public class Change_timeline extends AppCompatActivity {
         choose.setOnClickListener(v -> {
             if (isNotTime()) Toast.makeText(this, "Укажите корректное время слева от кнопки, когда должно приходить уведомление", Toast.LENGTH_LONG).show();
             else if(isNotHour() || isNotMinute()) Toast.makeText(this, "Укажите корректное время слева от кнопки, когда должно приходить уведомление", Toast.LENGTH_LONG).show();
-            else if (isNotHour()) Toast.makeText(this, "Введите корректное кол-во часов в промежутке от 0 до 24 часов", Toast.LENGTH_LONG).show();
-            else if (isNotMinute()) Toast.makeText(this, "Введите корректное кол-во минут в промежутке от 0 до 59 часов", Toast.LENGTH_LONG).show();
+            else if (isNotHour()) Toast.makeText(this, "Введите корректное кол-во часов в промежутке от 0 до 24", Toast.LENGTH_LONG).show();
+            else if (isNotMinute()) Toast.makeText(this, "Введите корректное кол-во минут в промежутке от 0 до 59", Toast.LENGTH_LONG).show();
             else {
                 int h = Integer.parseInt(ethours.getText().toString());
                 int m = Integer.parseInt(etminutes.getText().toString());
